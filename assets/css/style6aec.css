@@ -1,0 +1,429 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+.serch-tenmien .live-search-results{
+	display: none !important	
+}
+.blog-wrapper {
+    background: rgb(247, 248, 249);
+}
+.entry-content{
+	padding-bottom: 0
+}
+ .button-fixx {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 99999999;
+	background: #fff;
+	padding: 15px 10px;
+	font-size: 14px;
+	justify-content: center;
+	display:none !important;
+	gap: 20px;
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0px 0px 4px 0px #00000061;
+}
+body.ux-builder-iframe #wrapper  .button-fixx {
+	display: flex !important
+}
+.button-fixx .icon-box .icon-box-text {
+	flex: none;
+	padding: 0;
+	color: #58575C;
+}
+
+.button-fixx .icon-box {
+	width: max-content;
+	gap: 5px;
+}
+.button-fixx .icon-box *{
+	margin-bottom: 0 !important
+}
+.button-fixx .icon-box .icon-box-text * {
+	color: #58575C !important;
+}
+
+.button-fixx .icon-box img {
+	width: 100% !important;
+	border-radius: 100%;
+	padding: 0;
+}
+.button-fixx .icon-box.zalo img{
+	border: 1px solid rgb(0,95,230);
+}
+.off-canvas .nav li>a:hover {
+	background-color: #e32309;
+	color: #fff !important;
+}
+.off-canvas button.toggle {
+	position: absolute;
+	top: 7px;
+	right: 0;
+}
+.single-page p{
+	text-align: justify;
+}
+.flickity-page-dots {
+	bottom: 0;
+}
+/*************** ADD CUSTOM CSS HERE.   ***************/
+.box-logo svg,
+.gallery-box svg{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.box-logo svg rect,
+.gallery-box svg rect{
+	fill: none;
+	stroke: #e1eaf5;
+	stroke-width: 2;
+	stroke-dasharray: 422,0;
+	transition:all 0.35s linear;
+}
+.box-logo:hover svg rect,
+.gallery-box:hover svg rect{
+	stroke-width: 6px;
+	stroke: rgb(255, 186, 0);
+	stroke-dasharray: 15, 288;
+	stroke-dashoffset: 48;
+	transition: all 1.35s cubic-bezier(.19,1,.22,1);
+}
+.box-logo .gallery-box:hover svg rect{
+	stroke-dasharray: 15, 239;
+}
+.icon-cus-2 .icon-inner {
+	padding-top: calc(100% - 3px);
+	width: 100%;
+	position: relative;
+	border-radius: 50%;
+	margin: 0;
+	background: #fff;
+	display: block;
+	/* padding: 8px; */
+	border: 2px solid rgba(255, 139, 0, 1);
+}
+.icon-cus-2 .icon-inner img,
+.icon-cus-2 .icon-inner svg{
+	position: absolute;
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	left: 8px;
+	top: 8px;
+}
+
+.icon-cus-2 .icon-inner svg {
+	color: rgba(255, 139, 0, 1);
+	padding: 0;
+}
+
+.icon-cus-2 .icon-inner svg path {
+	fill: rgba(255, 139, 0, 1) !important;
+	stroke: rgb(255 255 255) ! IMPORTANT;
+}
+@keyframes marquee-to-up {
+	from {
+		transform: translate(0,0%)
+	}
+
+	to {
+		transform: translate(0,-100%)
+	}
+}
+
+.row.uc_marquee{
+	position: relative;
+	overflow: hidden;	 
+	animation: marquee-to-up  linear 30s infinite;
+	width: 100%;
+}
+.row.uc_marquee:hover  {
+	animation-play-state: paused;
+}
+.row.uc_marquee-2{
+	animation: marquee-to-up linear 28s infinite;
+}
+.col-marquee-to-up{
+	overflow: hidden;
+	max-height: 800px;
+}
+.img-contain img{
+	object-fit: contain;
+	padding: 20px
+}
+td, th{
+	font-size: inherit
+}
+.cus-link a {
+	display: block;
+	background: #FFA8A852;
+	border-radius: 50px;
+	padding: 14px;
+	font-size: 18px;
+	transition: all 0.5s;
+}
+.cus-link a:hover{
+	background: #e32309;
+}
+.col-filter-none{
+	display: none
+}
+.recuit-ss{
+	z-index: 9
+}
+.filter-recruit{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap
+
+}
+.container_posts_filter{
+	min-width: 190px;
+	position: relative;
+}
+.filter-recruit-btn{
+	display: flex;
+	align-items: center
+}
+.filter-recruit-btn button{
+	margin: 10px 0;	
+	line-height: normal;
+	text-transform: none;
+}
+button.btn-filter {
+	background: #e32309;
+	color: #fff;
+	height: 48px;
+	width: 58px;
+	border-radius: 6px;
+	margin-left: 20px;
+	margin-right: 0;
+}
+button.btn-filter:hover{
+	opacity: 0.8
+}
+.select-btn {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	padding: 0 8px;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #f2f2f2;
+	justify-content: center;
+}
+.select-btn .btn-text-count {
+	display: none;
+	padding: 0px;
+	text-align: center;
+	width: 16px;
+	height: 16px;
+	background: #828282;
+	color: #fff;
+	border-radius: 50px;
+	margin-right: 10px;
+	font-size: 10px;
+}
+
+.select-btn .arrow-dwn {
+	display: flex;
+	height: 21px;
+	width: 21px;
+	color: #333;
+	font-size: 14px;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s;
+}
+
+.select-btn.open .arrow-dwn {
+	transform: rotate(-180deg);
+}
+
+.list-items {
+	width: 100%;
+	position: absolute;
+	margin-top: 4px;
+	border-radius: 8px;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #f2f2f2;
+	display: none;
+	z-index: 2;
+}
+
+.select-btn.open ~ .list-items {
+	display: block;
+}
+
+.list-items .item {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	height: 50px;
+	cursor: pointer;
+	transition: 0.3s;
+	padding: 0 12px;
+	border-radius: 8px;
+}
+
+.list-items .item:hover {
+	background-color: #d9e1ee;
+}
+
+.list-items .item .item-text {
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+}
+
+.list-items .item.checked .checkbox {
+	background-color: #828282;
+	border-color: #828282;
+}
+
+.list-items .item.checked .checkbox .check-icon {
+	transform: scale(1);
+}
+
+.list-items .item .checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 16px;
+	width: 16px;
+	border-radius: 4px;
+	margin-right: 12px;
+	border: 1.5px solid #c0c0c0;
+	transition: all 0.3s ease-in-out;
+}
+
+.list-items .item .checkbox .check-icon {
+	color: #fff;
+	font-size: 12px;
+	transform: scale(0);
+	transition: all 0.2s ease-in-out;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.box-cus-icon .col-inner{
+	gap: 20px;
+	padding: 16px;
+	border: 1px solid #f0f0f0;
+	border-radius: 6px;
+	box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.08);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.box-cus-icon .icon-box{
+	align-items: center;
+	gap: 10px;
+}
+.box-cus-icon .icon-box-img svg{
+	height: 22px;
+	width: 22px;
+	padding: 0
+}
+.box-cus-icon .icon-inner{
+	background: #e32309;
+	border-radius: 6px;
+	width: 100%;
+	height:38px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon-l .icon-box-img {
+	position: relative;
+	left: 18px;
+	margin-bottom: -41px;
+}
+.icon-l h3{
+	font-size: 26px;
+	margin-bottom:0px
+}
+.fs-large {
+	font-size: 18px
+}
+.fs-large h2{
+	font-size: 30px;
+	margin-bottom: 0
+}
+@media only screen and (max-width: 850px) {
+	.icon-l h3{
+		font-size: 24px;
+	}
+	.fs-large {
+		font-size: 14px
+	}
+	.fs-large h2{
+		font-size: 24px;
+		margin-bottom: 0
+	}
+}
+@media only screen and (max-width: 550px) {
+	.icon-l h3{
+		font-size: 20px;
+		margin-bottom:0px
+	}
+	.cus-link a{
+		padding: 5px
+	}
+	.filter-recruit-btn,
+	.container_posts_filter{
+		width:100%;
+		justify-content: center;
+	}
+	.select-btn{
+		justify-content:start
+	}
+	button.btn-filter{
+		margin-left: 0
+	}
+	.button-fixx {
+		display:flex !important;
+	}
+}
+table tr:nth-child(1) 
+{
+    background: #ff6900;
+    color: #fff;
+}
+table tr:nth-child(1) td 
+{
+    color: #fff;
+}
+table 
+{
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-spacing: 0;
+}
+table td 
+{
+    border: 1px solid #ff6900;
+}
