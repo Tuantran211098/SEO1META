@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 66 66" width="512">
+  <g style="fill:none;stroke:#000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10">
+    <path d="m39.9 43.3h-37.9c1.5 2.5 4.1 4.1 7.2 4.1h30.7"></path>
+    <path d="m7.1 43.3v-33.1c0-1.5 1.2-2.7 2.7-2.7h43.2c1.5 0 2.7 1.2 2.7 2.7v8"></path>
+    <path d="m64 43.3v13c0 1.2-1 2.2-2.2 2.2h-16.6c-1.2 0-2.2-1-2.2-2.2v-32.8c0-1.2 1-2.2 2.2-2.2h16.7c1.2 0 2.2 1 2.2 2.2v20.1"></path>
+    <path d="m59.3 21.4c-1.2 0-2.3.6-2.9 1.6-1.4 2.1-4.5 2.1-5.8 0-.6-1-1.7-1.6-2.9-1.6"></path>
+    <circle cx="53.5" cy="54.3" r="1.4"></circle>
+  </g>
+</svg>
